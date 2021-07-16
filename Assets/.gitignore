@@ -1,0 +1,27 @@
+AppCenter/
+AppCenter.meta
+
+AppCenterEditorExtensions/
+AppCenterEditorExtensions.meta
+
+Editor/
+Editor.meta
+
+Editor Default Resources/
+Editor Default Resources.meta
+
+Firebase/
+Firebase.meta
+
+PlayServicesResolver/
+PlayServicesResolver.meta
+
+Plugins/
+Plugins.meta
+
+StreamingAssets/
+StreamingAssets.meta
+
+google-services.json
+
+

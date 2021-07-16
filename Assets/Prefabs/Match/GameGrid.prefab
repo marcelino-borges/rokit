@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &516509450686779280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 516509450686779374}
+  - component: {fileID: 4517121088759679838}
+  - component: {fileID: 8132802733085597715}
+  - component: {fileID: 9042022488810010355}
+  m_Layer: 0
+  m_Name: GameGrid
+  m_TagString: Grid
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &516509450686779374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516509450686779280}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4517121088759679838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516509450686779280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb435be6efbf18649b2d0304c96a3d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rows: 0
+  columns: 0
+  gridPositionsLayout: []
+  tilePrefab: {fileID: 3885972892025676939, guid: bfe890c4ea66e7941bf276208f757464,
+    type: 3}
+  breakableTilePrefab: {fileID: 3368621683245128068, guid: 896f90c456e32f045a40abc0b5466147,
+    type: 3}
+  frozenRockTilePrefab: {fileID: 2857715907686257991, guid: be97ea7d59245b34e93303a873ac7151,
+    type: 3}
+  specialItemPrefab: {fileID: 6487835192168025676, guid: 6b941e40ac50a844982e3ede88268f60,
+    type: 3}
+  levelCharacter: {fileID: 1097760187698942044, guid: 0abbf11052060c2448db945c7efeb31c,
+    type: 3}
+  gemsAvailable:
+  - {fileID: 7251510701065911093, guid: 2106019dd1eb1bd42b0236e61e9260c8, type: 3}
+  - {fileID: 3525855782557886279, guid: 808c9dc312a62ba45a8f0c62a7dba5c7, type: 3}
+  - {fileID: 3300048412645064069, guid: 4a1ca6cf46501dc4c9d105e7fc1f9e13, type: 3}
+  - {fileID: 2114637324379278684, guid: 7320d509a27271b489c04f6aa1be5fbb, type: 3}
+  - {fileID: 8663233171583686916, guid: 672a619dd271eca4fb0c9732f9ab6a96, type: 3}
+  - {fileID: 2313896189289935400, guid: eb7614ef292f6654c9036933d52a4862, type: 3}
+  bombTypes:
+    gem1_hor_bomb: {fileID: 3634477042650718456, guid: 7dee510a37ef4ea4fba90a04225eb8f5,
+      type: 3}
+    gem1_sqr_bomb: {fileID: 6728313850697717005, guid: 83af52ca22c55e54f96bf8b54067b1da,
+      type: 3}
+    gem1_vert_bomb: {fileID: 3146129316588413294, guid: 7666511c881b6384f8864da8bab8b9ef,
+      type: 3}
+    gem2_hor_bomb: {fileID: 339161166789958016, guid: 0f255c7b44aeaee4182a468434362373,
+      type: 3}
+    gem2_sqr_bomb: {fileID: 4691724047040361729, guid: 453a1b49be523864f890a23f3739499f,
+      type: 3}
+    gem2_vert_bomb: {fileID: 5674118471366047277, guid: 6b2d419e3ad2eab4e9615ccb22765fd2,
+      type: 3}
+    gem3_hor_bomb: {fileID: 6840957788084443778, guid: e7acf52f2d548e94ab809f091838f56f,
+      type: 3}
+    gem3_sqr_bomb: {fileID: 9196824509084177893, guid: fcdd250891c9f7b4ba3f63d3dc4593db,
+      type: 3}
+    gem3_vert_bomb: {fileID: 366018602298638353, guid: df3f291624128e9488bd886b079b8c33,
+      type: 3}
+    gem4_hor_bomb: {fileID: 3263052968563853184, guid: ecba401fdad2d924083cac527d731db0,
+      type: 3}
+    gem4_sqr_bomb: {fileID: 5334622641538357567, guid: 82c37ce00b5ef974b9a69ab45e9baf1b,
+      type: 3}
+    gem4_vert_bomb: {fileID: 193887827252452517, guid: 291becd7dcd1ed243891c35aae82d878,
+      type: 3}
+    gem5_hor_bomb: {fileID: 8550490774293624948, guid: 0ec0eb9388ce39445a32d17f4932bc9b,
+      type: 3}
+    gem5_sqr_bomb: {fileID: 5468991768740992835, guid: 5de88cd42fe2d3b44bfaaea14e144b9e,
+      type: 3}
+    gem5_vert_bomb: {fileID: 5044627121187821313, guid: f3d94b4e1e35f384a8c12e306384ef6a,
+      type: 3}
+    gem6_hor_bomb: {fileID: 4770082503804709334, guid: a947490c3a8ef0d45beb0e650c007201,
+      type: 3}
+    gem6_sqr_bomb: {fileID: 5301649609424969860, guid: 38a7ab6b29375bf4b82af2d06b385620,
+      type: 3}
+    gem6_vert_bomb: {fileID: 3337628240614289116, guid: d63f9f6168db0294e8b74362f38ac9f3,
+      type: 3}
+    colorBomb: {fileID: 879590883302646076, guid: 90f393a00a7a35342be28a08f731d299,
+      type: 3}
+  dropInOffset: 0
+  refillDelay: 0.5
+  destroyEffect: {fileID: 1300382976771069365, guid: 75e1866164474a44e82e05532f420dd6,
+    type: 3}
+  starsExplosionEffect: {fileID: 1098245772625174, guid: d350ad29b27c64ecbad769fd1feff30a,
+    type: 3}
+  gemExplosionPink: {fileID: 737912481840699214, guid: 16e67de1daff131499e8b159d9eca60d,
+    type: 3}
+  gemExplosionGreen: {fileID: 737912481840699214, guid: d9360ba70ea00f2408c0605856b77de3,
+    type: 3}
+  gemExplosionBlue: {fileID: 737912481840699214, guid: eadeb2473f6d61a48ac542df4383383b,
+    type: 3}
+  gemExplosionYellow: {fileID: 737912481840699214, guid: 9390efd5490a7824da1424a3bd5c12ec,
+    type: 3}
+  gemExplosionRed: {fileID: 737912481840699214, guid: 0b9195f3c6e23fc44b7efcb78e0c6aec,
+    type: 3}
+  gemExplosionPurple: {fileID: 737912481840699214, guid: 39981045c618ab94e9a18da7590cac21,
+    type: 3}
+  gemExplosionDust: {fileID: 737912481840699214, guid: 3d0a21b4b3a6f9c438eb5421bed784fe,
+    type: 3}
+  colorBombEffect: {fileID: 2689062142839855777, guid: 37a30bfbc9d886b4f9bb541f641e9cd7,
+    type: 3}
+  rowBombEffect: {fileID: 48561213278742823, guid: 42df0efef9d9bea4997ab8eb81393ed7,
+    type: 3}
+  columnBombEffect: {fileID: 48561213278742823, guid: 8f8035cb51af88c4b803169fcb494ebd,
+    type: 3}
+  colorBombProjectilePrefab: {fileID: 1097760187698942044, guid: 0abbf11052060c2448db945c7efeb31c,
+    type: 3}
+  mainCanvasTransform: {fileID: 0}
+  match3Manager: {fileID: 0}
+  currentState: 1
+  currentGem: {fileID: 0}
+  matchType:
+    type: 0
+    color: 
+--- !u!114 &8132802733085597715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516509450686779280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3143167b324ba0945af5f8105e7aff08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentMatches: []
+--- !u!114 &9042022488810010355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516509450686779280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ae9d245ec53b2438eec721c7e185ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hintDelay: 10
+  hintParticle: {fileID: 4000289384878718881, guid: 0046fdca8f3bc3a4ba12d2c8399eebb1,
+    type: 3}
+  currentHint: {fileID: 0}

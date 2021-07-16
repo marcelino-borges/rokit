@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 643ba463883ed2343b6e90903b7702e1, type: 3}
+  m_Name: Question0002
+  m_EditorClassIdentifier: 
+  question: "Qual \xE9 o objetivo da fotoss\xEDntese?"
+  answers:
+  - info: "Produ\xE7\xE3o de energia"
+    isCorrect: 1
+  - info: "Produ\xE7\xE3o de anticorpos"
+    isCorrect: 0
+  - info: "Filtrar a \xE1gua"
+    isCorrect: 0
+  - info: Tirar uma foto
+    isCorrect: 0
+  addScore: 10
