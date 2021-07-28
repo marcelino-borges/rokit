@@ -166,7 +166,7 @@ public class GameManager : MonoBehaviour {
         instance.StartCoroutine(LoadLevelAsynchronously(sceneIndex));
         try {
         } catch (Exception e) {
-            Debug.LogError("Not possible loading the scene. Probably you tried to load a scene that doesn't exist.");
+            //Debug.LogError("Not possible loading the scene. Probably you tried to load a scene that doesn't exist.");
         }
     }
 
@@ -174,7 +174,7 @@ public class GameManager : MonoBehaviour {
         try {
             instance.StartCoroutine(LoadLevelAsynchronously(sceneName));
         } catch (Exception e) {
-            Debug.LogError("Not possible loading the scene. Probably you tried to load a scene that doesn't exist.");
+            //Debug.LogError("Not possible loading the scene. Probably you tried to load a scene that doesn't exist.");
         }
     }
 
@@ -209,7 +209,6 @@ public class GameManager : MonoBehaviour {
                 } else {
                     Debug.LogError("GameManager > variable loadingBarText not assigned!");
                 }*/
-                Debug.Log(progress);
                 //Waits a frame
                 yield return null;
 
@@ -222,7 +221,7 @@ public class GameManager : MonoBehaviour {
                 }
             }
         } else {
-            Debug.LogError("GameManager > variable loadingBar not assigned!");
+            //Debug.LogError("GameManager > variable loadingBar not assigned!");
         }
     }
 
@@ -257,7 +256,7 @@ public class GameManager : MonoBehaviour {
                 } else {
                     Debug.LogError("GameManager > variable loadingBarText not assigned!");
                 }*/
-                Debug.Log("no while. isDone = " + operation.isDone);
+                //Debug.Log("no while. isDone = " + operation.isDone);
                 //Waits a frame
                 yield return null;
 
@@ -270,7 +269,7 @@ public class GameManager : MonoBehaviour {
                 }
             }
         } else {
-            Debug.LogError("GameManager > variable loadingBar not assigned!");
+            //Debug.LogError("GameManager > variable loadingBar not assigned!");
         }
     }
 

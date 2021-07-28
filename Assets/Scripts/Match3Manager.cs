@@ -193,7 +193,7 @@ public class Match3Manager : MonoBehaviour {
         //Debug.Log("currentScore = " + currentScore);
         //Debug.Log("amount = " + amount);
         //Debug.Log("GameManager.scoreMultiplier = " + GameManager.scoreMultiplier);
-        Debug.Log("streakValue = " + streakValue);
+        //Debug.Log("streakValue = " + streakValue);
         //Debug.Log("gemBaseValue = " + gemBaseValue);
 
         UpdateScoreBar();
@@ -203,7 +203,7 @@ public class Match3Manager : MonoBehaviour {
             if (grid.levelCharacter != null) {
                 grid.levelCharacter.GetComponent<ZelulaLevel>().MakeStarOrVictoryAnim();
             } else {
-                Debug.LogError("Variable grid.levelCharacter not assigned!");
+                //Debug.LogError("Variable grid.levelCharacter not assigned!");
             }
         }
         //Makes the level character show animation of celebration 
@@ -211,7 +211,7 @@ public class Match3Manager : MonoBehaviour {
             if (grid.levelCharacter != null) {
                 grid.levelCharacter.GetComponent<ZelulaLevel>().MakeMatchAnimation();
             } else {
-                Debug.LogError("Variable grid.levelCharacter not assigned!");
+                //Debug.LogError("Variable grid.levelCharacter not assigned!");
             }
         }
 
@@ -287,7 +287,7 @@ public class Match3Manager : MonoBehaviour {
     public bool WereMissionsCompleted() {
         int completedMissionsCount = 0;
         foreach (Mission mission in missionsInLevel) {
-            Debug.Log("Is misson " + mission.missionType + " completed? " + mission.isCompleted);
+            //Debug.Log("Is misson " + mission.missionType + " completed? " + mission.isCompleted);
             if (!mission.isCompleted) {
 
                 return false;
@@ -325,7 +325,7 @@ public class Match3Manager : MonoBehaviour {
             //Calls the method to set up the victory informations (stars and score)
             StartCoroutine(uIElements.victoryPanel.GetComponent<VictoryMenu>().SetUpPanel(stars, score));
         } else {
-            Debug.LogError("Variable uIElements.victoryPanel not assigned!");
+            //Debug.LogError("Variable uIElements.victoryPanel not assigned!");
         }
         hasShownVictoryPanel = true;
     }
@@ -420,7 +420,7 @@ public class Match3Manager : MonoBehaviour {
             uIElements.dialogPanel.GetComponent<Animator>().Play("SlideIn");
             GameManager.canMakeMoves = false;
         } else {
-            Debug.LogError("Variable dialogPanel not assigned!");
+            //Debug.LogError("Variable dialogPanel not assigned!");
         }
     }
 
@@ -429,7 +429,7 @@ public class Match3Manager : MonoBehaviour {
             uIElements.dialogPanel.GetComponent<Animator>().Play("SlideOut");
             GameManager.canMakeMoves = true;
         } else {
-            Debug.LogError("Variable uIElements.dialogPanel not assigned!");
+            //Debug.LogError("Variable uIElements.dialogPanel not assigned!");
         }
     }
 
@@ -578,7 +578,7 @@ public class Match3Manager : MonoBehaviour {
         if (uIElements.gameOverPanel != null) {
             StartCoroutine(showGameOverPanel());
         } else {
-            Debug.LogError("Variable uIElements.gameOverPanel not assigned!");
+            //Debug.LogError("Variable uIElements.gameOverPanel not assigned!");
         }
     }
 
