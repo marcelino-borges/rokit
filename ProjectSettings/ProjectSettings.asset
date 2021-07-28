@@ -44,7 +44,9 @@ PlayerSettings:
     duration: 2
   - logo: {fileID: 21300000, guid: abf5170bd8205bc45a4a6ddf0c6c80df, type: 3}
     duration: 2
-  - logo: {fileID: 21300000, guid: d033702c5f2fab042933cd4a331e586f, type: 3}
+  - logo: {fileID: 21300000, guid: 1b186be5549c75e408d47afeea72912a, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 75794d22964f1624685a98ad9e74b8e4, type: 3}
     duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
@@ -124,7 +126,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0.6
+  bundleVersion: 1.0.7
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -161,7 +163,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.devbox.rokitthegame
   buildNumber: {}
-  AndroidBundleVersionCode: 7
+  AndroidBundleVersionCode: 8
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
